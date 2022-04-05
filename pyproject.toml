@@ -1,0 +1,29 @@
+[tool.poetry]
+name = "ner"
+version = "0.0.1"
+description = ""
+authors = ["Abylaikhan <Abilay5787@gmail.com>"]
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+podder-task-foundation = {git = "https://github.com/podder-ai/podder-task-foundation.git", rev = "main", tag = "0.2.7"}
+podder-task-foundation-objects-image = {git = "https://github.com/podder-ai/podder-task-foundation-objects-image", rev = "main", tag = "0.1.4"}
+opencv-python = "4.5.4.60"
+numpy = "^1.22.2"
+easyocr = "^1.4.1"
+deskew = "^0.10.40"
+pdf2image = "^1.16.0"
+flair = "^0.10"
+#onnxruntime = "^1.10.0"
+onnxruntime = "^1.10.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^6.2.5"
+isort = "^5.10.1"
+yapf = "^0.31.0"
+pytest-cov = "^3.0.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
